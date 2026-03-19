@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reptile World | 프리미엄 파충류 커뮤니티</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="leaf"></i>
+                Reptile<span>World</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#care-guide">Care Guide</a></li>
+                <li><a href="#supplies">Supplies</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge">Discover the wild</div>
+            <h1>자연과 일상이 만나는 <br><span class="highlight">특별한 공간</span></h1>
+            <p>다양한 파충류와 함께하는 프리미엄 라이프스타일을 제안합니다. 안전하고 올바른 사육 정보와 함께 특별한 동반자를 찾아보세요.</p>
+            <div class="hero-buttons">
+                <a href="#species" class="btn btn-primary">파충류 둘러보기 <i data-lucide="arrow-right"></i></a>
+                <a href="#about" class="btn btn-secondary">더 알아보기</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="animate-on-scroll">매혹적인 비늘, <br>아름다운 생명체들</h2>
+                    <p class="animate-on-scroll delay-1">파충류는 단순한 반려동물을 넘어, 데스크톱의 작은 정원 속 자연의 경이로움을 선사합니다. 우리는 생명 존중을 최우선으로, 모든 파충류가 건강하게 자랄 수 있는 환경과 지식을 공유합니다.</p>
+                    <ul class="feature-list animate-on-scroll delay-2">
+                        <li><i data-lucide="check-circle"></i> 검증된 브리더의 건강한 개체</li>
+                        <li><i data-lucide="check-circle"></i> 전문가의 맞춤형 사육 1:1 컨설팅</li>
+                        <li><i data-lucide="check-circle"></i> 프리미엄 테라리움 및 용품 제공</li>
+                    </ul>
+                </div>
+                <div class="about-image animate-on-scroll delay-3">
+                    <div class="glass-card" style="cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease;" onclick="window.location.href='guide.html'" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary-hover)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent';">
+                        <i data-lucide="compass" class="icon-large"></i>
+                        <h3>초보자 가이드</h3>
+                        <p>파충류 입문을 위한 A to Z (클릭)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="species" class="content-section bg-alt">
+        <div class="section-container">
+            <h2 class="section-title animate-on-scroll">주요 파충류 도감</h2>
+            <p class="section-subtitle animate-on-scroll delay-1">인기 있는 파충류 친구들을 만나보세요.</p>
+            
+            <div class="card-grid">
+                <!-- Fat-tail Gecko (Data from Notion + AI Image) -->
+                <div class="info-card animate-on-scroll delay-1">
+                    <img src="images/fat/fat_tail_gecko.png" alt="Fat-tail Gecko">
+                    <span class="card-badge">펫테일게코</span>
+                    <h3>펫테일게코 건강의 핵심, '습식 은신처' 완벽 활용법</h3>
+                    <p>펫테일게코는 서아프리카 건조 지대에 서식하지만, 바위 틈이나 땅속에 숨어 지내며 습기를 보충하는 습성이 있습니다. 코코피트, 스파그넘 이끼 등을 활용해 '촉촉한' 상태의 습식 은신처를 제공하는 것이 건강 관리의 핵심입니다.</p>
+                    <div class="card-footer">
+                        <span>2026-03-18</span>
+                        <a href="https://www.notion.so/2026-03-18-32763e235907811db46dc1b7600abbf3" target="_blank" class="notion-icon">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> 원문 보기
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Leopard Gecko (AI Generated Content + AI Image) -->
+                <div class="info-card animate-on-scroll delay-2">
+                    <img src="images/leo/leopard_gecko.png" alt="Leopard Gecko">
+                    <span class="card-badge">레오파드게코</span>
+                    <h3>화려한 무늬의 '레오파드 게코' 기본 사육 정보</h3>
+                    <p>레오파드 게코는 야행성이며, 곤충을 급여하는 식단 관리가 필수입니다. 사막 테라리움 환경을 구성하여 핫존과 쿨존을 명확하게 분리해 주는 것이 건강의 비결입니다.</p>
+                    <div class="card-footer">
+                        <span>AI 생성</span>
+                    </div>
+                </div>
+                
+                <!-- Crested Gecko (AI Auto Generated Placeholder + AI Image) -->
+                <div class="info-card animate-on-scroll delay-3">
+                    <img src="images/cre/crested_gecko.png" alt="Crested Gecko">
+                    <span class="card-badge">크레스티드게코</span>
+                    <h3>크레스티드 게코를 위한 입체 환경 조성</h3>
+                    <p>숲속 나무를 타는 습성을 가진 크레스티드 게코는 물에 섞어주는 슈퍼푸드를 주식으로 하며 관리 난이도가 낮고 속눈썹 모양의 볏이 큰 특징입니다.</p>
+                    <div class="card-footer">
+                        <span>AI 생성</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="care-guide" class="content-section bg-light">
+        <div class="section-container">
+            <h2 class="section-title animate-on-scroll">사육 가이드</h2>
+            <p class="section-subtitle animate-on-scroll delay-1">초보자를 위한 완벽한 종별 사육 환경 조성 팁</p>
+            
+            <div class="card-grid">
+                <!-- Fat-tail Gecko Care -->
+                <div class="info-card animate-on-scroll delay-1">
+                    <img src="images/careGuide/fat_tail_care.png" alt="Fat-tail Gecko Setup">
+                    <span class="card-badge" style="background: rgba(245, 158, 11, 0.2);">펫테일게코 세팅</span>
+                    <h3>바닥재와 습도의 마법</h3>
+                    <p>건조한 아프리카에 살지만 땅속에 숨는 습성이 있습니다. 코코피트를 촉촉하게 적신 '습식 은신처'를 반드시 마련해주고 하부 열원으로 매트를 30도 정도로 유지해 주세요.</p>
+                </div>
+
+                <!-- Crested Gecko Care -->
+                <div class="info-card animate-on-scroll delay-2">
+                    <img src="images/careGuide/crested_care.png" alt="Crested Gecko Setup">
+                    <span class="card-badge" style="background: rgba(52, 211, 153, 0.2);">크레스티드게코 세팅</span>
+                    <h3>수직 숲속 모험가</h3>
+                    <p>벽에 붙어 이동할 수 있게 세로로 긴 유리 사육장이 적합합니다. 굵은 코르크보드와 인조 덩굴을 입체적으로 엮어 열대우림처럼 꾸미고 하루 1~2회 벽면에 분무해 주세요.</p>
+                </div>
+
+                <!-- Leopard Gecko Care -->
+                <div class="info-card animate-on-scroll delay-3">
+                    <img src="images/careGuide/leopard_care.png" alt="Leopard Gecko Setup">
+                    <span class="card-badge" style="background: rgba(59, 130, 246, 0.2);">레오파드게코 세팅</span>
+                    <h3>핫존과 쿨존의 비밀</h3>
+                    <p>따뜻한 구역(핫존 30도)과 시원한 구역(쿨존 24도)이 나뉘어야 합니다. 핫존에 건식 은신처를 두고, 모래 베이스 장판으로 건조하게 관리하되 언제든 마실 수 있는 얕은 물그릇을 항상 놓아주세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="supplies" class="content-section bg-alt">
+        <div class="section-container">
+            <h2 class="section-title animate-on-scroll">추천 용품</h2>
+            <p class="section-subtitle animate-on-scroll delay-1">건강한 사육을 위해 필요한 필수품 목록</p>
+            
+            <div class="card-grid">
+                <!-- Data from Notion -->
+                <div class="info-card animate-on-scroll delay-2">
+                    <span class="card-badge">필수품</span>
+                    <h3>파충류 브리더의 필수품: 정밀 전자저울</h3>
+                    <p>정밀 전자저울은 단순히 체중을 재는 것을 넘어, 유체 게코의 성장 곡선을 확인하고 성체 암컷의 번식 적정 체중 도달 여부를 파악하는 데 필수적인 도구입니다. 0.01g 단위까지 측정 가능한 저울로 건강을 지켜주세요.</p>
+                    <div class="card-footer">
+                        <span>2026-03-18</span>
+                        <a href="https://www.notion.so/2026-03-18-32763e235907812d8589f7c2f6853ac2" target="_blank" class="notion-icon">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> 원문 보기
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card animate-on-scroll delay-3">
+                    <span class="card-badge">AI 자동 생성</span>
+                    <h3>추천 영양제 및 프리미엄 바닥재</h3>
+                    <p>이 영억은 추후 노션에서 데이터가 갱신되면 표출됩니다. 노션에 더 많은 용품 가이드를 등록해 주세요.</p>
+                    <div class="card-footer">
+                        <span>--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="content-section">
+        <div class="section-container">
+            <h2 class="section-title animate-on-scroll">파트너 및 커뮤니티</h2>
+            <p class="section-subtitle animate-on-scroll delay-1">전문 브리더들과 소통하고 양질의 환경을 제공해 보세요.</p>
+            
+            <div class="card-grid">
+                <!-- Venus Gecko -->
+                <div class="info-card animate-on-scroll delay-1" style="cursor: pointer;" onclick="window.open('https://venus-gecko.qshop.ai/', '_blank')">
+                    <img src="images/community/venus_gecko.png" alt="Venus Gecko">
+                    <span class="card-badge" style="background: rgba(52, 211, 153, 0.2);">크레스티드게코 전문</span>
+                    <h3>베누스게코 (Venus Gecko)</h3>
+                    <p>아름다운 볏과 눈망울을 가진 크레스티드 게코 전문샵입니다. 건강한 개체와 프리미엄 용품을 한곳에서 만나보세요.</p>
+                    <div class="card-footer">
+                        <span>온라인 샵</span>
+                        <a href="https://venus-gecko.qshop.ai/" target="_blank" class="notion-icon">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> 방문하기
+                        </a>
+                    </div>
+                </div>
+
+                <!-- The Cave -->
+                <div class="info-card animate-on-scroll delay-2" style="cursor: pointer;" onclick="window.open('https://www.instagram.com/thecave_korea', '_blank')">
+                    <img src="images/community/the_cave.png" alt="The Cave">
+                    <span class="card-badge" style="background: rgba(245, 158, 11, 0.2);">펫테일게코 전문</span>
+                    <h3>더케이브 (The Cave)</h3>
+                    <p>통통한 꼬리가 매력적인 펫테일 게코 전문 브랜드입니다. 감각적인 인스타그램에서 건강하게 축양된 개체들을 만나보세요.</p>
+                    <div class="card-footer">
+                        <span>인스타그램</span>
+                        <a href="https://www.instagram.com/thecave_korea" target="_blank" class="notion-icon">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> 방문하기
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gecko Moa -->
+                <div class="info-card animate-on-scroll delay-3" style="cursor: pointer;" onclick="window.open('https://geckomoaa.com/', '_blank')">
+                    <img src="images/community/geckomoa.png" alt="Gecko Moa">
+                    <span class="card-badge" style="background: rgba(59, 130, 246, 0.2);">레오파드게코 전문</span>
+                    <h3>게코모아 (Gecko Moa)</h3>
+                    <p>다양한 모프와 화려한 패턴의 레오파드 게코 정보가 가득한 커뮤니티 공간입니다. 집사들과 폭넓은 소통의 장을 열어보세요.</p>
+                    <div class="card-footer">
+                        <span>커뮤니티 웹</span>
+                        <a href="https://geckomoaa.com/" target="_blank" class="notion-icon">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> 방문하기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i data-lucide="leaf"></i>
+                Reptile<span>World</span>
+            </div>
+            <p>&copy; 2026 Reptile World. All rights reserved. By AI Assistant.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
