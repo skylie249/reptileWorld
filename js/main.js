@@ -1,4 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // i18n logic
+    const savedLang = localStorage.getItem('rep_lang') || 'ko';
+    
+    window.applyLanguage = function(lang) {
+        if (!window.translations || !window.translations[lang]) return;
+        
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (window.translations[lang][key]) {
+                el.innerHTML = window.translations[lang][key];
+            }
+        });
+
+        const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+        placeholders.forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (window.translations[lang][key]) {
+                el.placeholder = window.translations[lang][key];
+            }
+        });
+
+        const langSelects = document.querySelectorAll('.lang-select');
+        langSelects.forEach(select => select.value = lang);
+        
+        document.documentElement.lang = lang;
+    };
+
+    window.changeLanguage = function(lang) {
+        localStorage.setItem('rep_lang', lang);
+        window.applyLanguage(lang);
+        window.dispatchEvent(new Event('languageChanged'));
+    };
+
+    document.addEventListener('change', (e) => {
+        if (e.target && e.target.classList.contains('lang-select')) {
+            window.changeLanguage(e.target.value);
+        }
+    });
+
+    window.applyLanguage(savedLang);
+
     // Theme Toggle Logic
     const themeToggle = document.getElementById('themeToggle');
     const currentTheme = localStorage.getItem('theme') || 'dark';

@@ -18,13 +18,18 @@
                 Reptile<span class="highlight">World</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html#species">파충류 도감</a></li>
-                <li><a href="index.html#care-guide">사육 가이드</a></li>
-                <li><a href="index.html#supplies">용품 세팅</a></li>
-                <li><a href="index.html#community">커뮤니티</a></li>
-                <li><a href="mypage.html">마이페이지</a></li>
+                <li><a href="index.html#species" data-i18n="nav_species">파충류 도감</a></li>
+                <li><a href="index.html#care-guide" data-i18n="nav_guide">사육 가이드</a></li>
+                <li><a href="index.html#supplies" data-i18n="nav_supplies">용품 세팅</a></li>
+                <li><a href="index.html#community" data-i18n="nav_community">커뮤니티</a></li>
+                <li><a href="mypage.html" data-i18n="nav_mypage">마이페이지</a></li>
             </ul>
             <div class="nav-controls">
+                <select class="lang-select" aria-label="Select Language">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                </select>
                 <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i data-lucide="sun"></i>
                 </button>
@@ -38,8 +43,8 @@
     <main>
         <!-- Header -->
         <section class="guide-header">
-            <h1 class="animate-on-scroll">파충류 입문 A to Z</h1>
-            <p class="animate-on-scroll delay-1">전문가가 알려주는 기초 지식부터 세팅까지! FAQ 형태로 초보자분들이 가장 궁금해하는 내용들을 정리했습니다.</p>
+            <h1 class="animate-on-scroll" data-i18n="g_title">파충류 입문 A to Z</h1>
+            <p class="animate-on-scroll delay-1" data-i18n="g_desc">전문가가 알려주는 기초 지식부터 세팅까지! FAQ 형태로 초보자분들이 가장 궁금해하는 내용들을 정리했습니다.</p>
         </section>
 
         <!-- Accordion FAQ Section -->
@@ -47,71 +52,71 @@
             
             <div class="accordion-item animate-on-scroll delay-2">
                 <button class="accordion-question">
-                    1. 처음 키워보는데, 어떤 파충류가 좋을까요?
+                    <span data-i18n="g_q1">1. 처음 키워보는데, 어떤 파충류가 좋을까요?</span>
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="accordion-answer">
-                    <p>파충류 입문자 분들께는 관리가 비교적 쉽고, 온도나 습도 조건이 너무 까다롭지 않은 종을 추천드립니다.</p>
+                    <p data-i18n="g_a1_p">파충류 입문자 분들께는 관리가 비교적 쉽고, 온도나 습도 조건이 너무 까다롭지 않은 종을 추천드립니다.</p>
                     <ul>
-                        <li><strong>크레스티드 게코:</strong> 곤충을 무서워하는 분들께 가장 추천합니다. '슈퍼푸드'라는 물에 개어 먹이는 전용 사료만으로 평생 사육이 가능하며 온순합니다.</li>
-                        <li><strong>레오파드 게코:</strong> 귀여운 미소와 적당한 크기를 지녔습니다. 충식(귀뚜라미, 밀웜 등)을 필수적으로 급여해야 하지만 튼튼하고 사람 손을 잘 탑니다.</li>
-                        <li><strong>콘 스네이크:</strong> 성격이 매우 온순하고 먹이 급여 주기가 주 1~2회로 여유로워 관리가 수월합니다.</li>
+                        <li data-i18n="g_a1_l1"><strong>크레스티드 게코:</strong> 곤충을 무서워하는 분들께 가장 추천합니다. '슈퍼푸드'라는 물에 개어 먹이는 전용 사료만으로 평생 사육이 가능하며 온순합니다.</li>
+                        <li data-i18n="g_a1_l2"><strong>레오파드 게코:</strong> 귀여운 미소와 적당한 크기를 지녔습니다. 충식(귀뚜라미, 밀웜 등)을 필수적으로 급여해야 하지만 튼튼하고 사람 손을 잘 탑니다.</li>
+                        <li data-i18n="g_a1_l3"><strong>콘 스네이크:</strong> 성격이 매우 온순하고 먹이 급여 주기가 주 1~2회로 여유로워 관리가 수월합니다.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="accordion-item animate-on-scroll delay-3">
                 <button class="accordion-question">
-                    2. 기본적으로 어떤 사육 장비가 필요한가요?
+                    <span data-i18n="g_q2">2. 기본적으로 어떤 사육 장비가 필요한가요?</span>
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="accordion-answer">
-                    <p>파충류가 건강하게 지내기 위해서는 종에 맞는 환경 조성이 필수입니다.</p>
+                    <p data-i18n="g_a2_p">파충류가 건강하게 지내기 위해서는 종에 맞는 환경 조성이 필수입니다.</p>
                     <ul>
-                        <li><strong>사육장 사이즈:</strong> 개체가 다 자랐을 때 크기의 1.5배 이상 되는 케이지가 이상적입니다. (교목성인 크레스티드 게코는 높이가 높은 케이지, 지상성인 레오파드 게코는 넓은 케이지)</li>
-                        <li><strong>열원 (난방장치):</strong> 변온동물인 파충류가 체온을 스스로 조절할 수 있도록 스팟 램프, 하부 히터(전기장판) 등을 준비해야 합니다.</li>
-                        <li><strong>자외선 (UVB 램프):</strong> 종에 따라 체내에서 칼슘을 합성하기 위해 자외선 조명이 필수인 경우가 많습니다. (거북이, 주행성 도마뱀 등)</li>
-                        <li><strong>기타 필수품:</strong> 온/습도계, 물그릇, 은신처(숨어있을 공간), 바닥재 등이 있습니다.</li>
+                        <li data-i18n="g_a2_l1"><strong>사육장 사이즈:</strong> 개체가 다 자랐을 때 크기의 1.5배 이상 되는 케이지가 이상적입니다. (교목성인 크레스티드 게코는 높이가 높은 케이지, 지상성인 레오파드 게코는 넓은 케이지)</li>
+                        <li data-i18n="g_a2_l2"><strong>열원 (난방장치):</strong> 변온동물인 파충류가 체온을 스스로 조절할 수 있도록 스팟 램프, 하부 히터(전기장판) 등을 준비해야 합니다.</li>
+                        <li data-i18n="g_a2_l3"><strong>자외선 (UVB 램프):</strong> 종에 따라 체내에서 칼슘을 합성하기 위해 자외선 조명이 필수인 경우가 많습니다. (거북이, 주행성 도마뱀 등)</li>
+                        <li data-i18n="g_a2_l4"><strong>기타 필수품:</strong> 온/습도계, 물그릇, 은신처(숨어있을 공간), 바닥재 등이 있습니다.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="accordion-item animate-on-scroll delay-3">
                 <button class="accordion-question">
-                    3. 온도와 습도는 어떻게 관리해야 하나요?
+                    <span data-i18n="g_q3">3. 온도와 습도는 어떻게 관리해야 하나요?</span>
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="accordion-answer">
-                    <p>대부분의 파충류는 추위에 매우 취약합니다.</p>
-                    <p><strong>온도:</strong> 사육장 한쪽은 따뜻하게(Hot zone), 반대쪽은 비교적 시원하게(Cool zone) 설정하여 개체가 스스로 원하는 온도를 찾아가게 해주는 것이 좋습니다. 예를 들어 레오파드 게코는 핫존 30~32도, 쿨존은 24~26도 수준이 적절합니다.</p>
-                    <p><strong>습도:</strong> 지나치게 건조하거나 습하면 피부병, 탈피 부전(허물을 제대로 못 벗는 현상)이 올 수 있습니다. 바닥재에 물을 분무해주거나 탈피 기간에는 '습식 은신처'를 별도로 두어 습기를 채워야 합니다.</p>
+                    <p data-i18n="g_a3_p1">대부분의 파충류는 추위에 매우 취약합니다.</p>
+                    <p data-i18n="g_a3_p2"><strong>온도:</strong> 사육장 한쪽은 따뜻하게(Hot zone), 반대쪽은 비교적 시원하게(Cool zone) 설정하여 개체가 스스로 원하는 온도를 찾아가게 해주는 것이 좋습니다. 예를 들어 레오파드 게코는 핫존 30~32도, 쿨존은 24~26도 수준이 적절합니다.</p>
+                    <p data-i18n="g_a3_p3"><strong>습도:</strong> 지나치게 건조하거나 습하면 피부병, 탈피 부전(허물을 제대로 못 벗는 현상)이 올 수 있습니다. 바닥재에 물을 분무해주거나 탈피 기간에는 '습식 은신처'를 별도로 두어 습기를 채워야 합니다.</p>
                 </div>
             </div>
 
             <div class="accordion-item animate-on-scroll delay-3">
                 <button class="accordion-question">
-                    4. 먹이와 영양제(비타민/칼슘) 급여 방법
+                    <span data-i18n="g_q4">4. 먹이와 영양제(비타민/칼슘) 급여 방법</span>
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="accordion-answer">
-                    <p>초식, 육식, 잡식 여부에 따라 먹이가 완전히 달라지므로 꼭 자신이 분양받을 종의 식성을 체크해야 합니다.</p>
-                    <p>또한 먹이에 영양제 가루를 묻혀서 주는 <strong>'더스팅(Dusting)'</strong> 과정이 반드시 필요합니다.</p>
+                    <p data-i18n="g_a4_p1">초식, 육식, 잡식 여부에 따라 먹이가 완전히 달라지므로 꼭 자신이 분양받을 종의 식성을 체크해야 합니다.</p>
+                    <p data-i18n="g_a4_p2">또한 먹이에 영양제 가루를 묻혀서 주는 <strong>'더스팅(Dusting)'</strong> 과정이 반드시 필요합니다.</p>
                     <ul>
-                        <li>파충류 뼈를 튼튼하게 하기 위한 **칼슘제**가 필수입니다.</li>
-                        <li>UVB 램프 조명을 쓰지 않는 야행성 개체에게는 비타민 **D3가 포함된 칼슘제**를 주어야 합니다.</li>
-                        <li>이 영양소가 부족해지면 뼈가 휘거나 부러지는 МBD(대사성 골질환)라는 무서운 병을 얻게 됩니다.</li>
+                        <li data-i18n="g_a4_l1">파충류 뼈를 튼튼하게 하기 위한 <strong>칼슘제</strong>가 필수입니다.</li>
+                        <li data-i18n="g_a4_l2">UVB 램프 조명을 쓰지 않는 야행성 개체에게는 비타민 <strong>D3가 포함된 칼슘제</strong>를 주어야 합니다.</li>
+                        <li data-i18n="g_a4_l3">이 영양소가 부족해지면 뼈가 휘거나 부러지는 МBD(대사성 골질환)라는 무서운 병을 얻게 됩니다.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="accordion-item animate-on-scroll delay-3">
                 <button class="accordion-question">
-                    5. 핸들링이나 사육 비용 등 알아두어야 할 점
+                    <span data-i18n="g_q5">5. 핸들링이나 사육 비용 등 알아두어야 할 점</span>
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="accordion-answer">
-                    <p><strong>핸들링 (개체를 만지는 행동):</strong> 강아지, 고양이와 다르게 사람의 손길을 온전히 즐기기보다는 참고 견디는 경우가 많습니다. 스트레스를 방지하기 위해 턱 밑부터 조심스럽게 받쳐 손 위로 스스로 올라오게 유도하시고 하루 5분~10분 내외로 짧게 하는 것을 권합니다.</p>
-                    <p><strong>초기 비용과 유지비:</strong> 생물 입양 비용보다 사육장, 자동온도조절기, 열원 등 세팅 장비 비용이 훨씬 높게 책정(최소 10~30만원 이상)될 수 있습니다. 또한 전기세, 매달 먹이 구매비 등 고정 지출이 발생함을 알아두세요.</p>
+                    <p data-i18n="g_a5_p1"><strong>핸들링 (개체를 만지는 행동):</strong> 강아지, 고양이와 다르게 사람의 손길을 온전히 즐기기보다는 참고 견디는 경우가 많습니다. 스트레스를 방지하기 위해 턱 밑부터 조심스럽게 받쳐 손 위로 스스로 올라오게 유도하시고 하루 5분~10분 내외로 짧게 하는 것을 권합니다.</p>
+                    <p data-i18n="g_a5_p2"><strong>초기 비용과 유지비:</strong> 생물 입양 비용보다 사육장, 자동온도조절기, 열원 등 세팅 장비 비용이 훨씬 높게 책정(최소 10~30만원 이상)될 수 있습니다. 또한 전기세, 매달 먹이 구매비 등 고정 지출이 발생함을 알아두세요.</p>
                 </div>
             </div>
 
@@ -124,10 +129,11 @@
                 <i data-lucide="leaf"></i>
                 Reptile<span>World</span>
             </div>
-            <p>&copy; 2026 Reptile World. All rights reserved. By AI Assistant.</p>
+            <p data-i18n="foot_desc">&copy; 2026 Reptile World. All rights reserved. By AI Assistant.</p>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script>
         // Init Lucide
