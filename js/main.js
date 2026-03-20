@@ -1,23 +1,62 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar scroll effect
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+
+    if (currentTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        if (themeToggle) themeToggle.innerHTML = '<i data-lucide="moon"></i>';
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+            if (isLight) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.innerHTML = '<i data-lucide="sun"></i>';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                themeToggle.innerHTML = '<i data-lucide="moon"></i>';
+            }
+            if (window.lucide) window.lucide.createIcons();
+        });
+    }
+
+    // Scroll Logic (Navbar + Scroll to Top)
     const navbar = document.querySelector('.navbar');
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
     
     window.addEventListener('scroll', () => {
         if (navbar) {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        }
+        if (scrollTopBtn) {
+            if (window.scrollY > 300) scrollTopBtn.classList.add('visible');
+            else scrollTopBtn.classList.remove('visible');
         }
     });
 
-    // Mobile menu toggle (basic setup, can expand later)
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Mobile menu toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
-    if (mobileBtn) {
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
-            // Here we'll add mobile menu functionality in the future
-            alert('모바일 메뉴 준비 중입니다.');
+            navLinks.classList.toggle('active');
+        });
+        
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
         });
     }
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage - Reptile World</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.1">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="leaf"></i>
+                Reptile<span class="highlight">World</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#species">파충류 도감</a></li>
+                <li><a href="index.html#care-guide">사육 가이드</a></li>
+                <li><a href="index.html#supplies">용품 세팅</a></li>
+                <li><a href="index.html#community">커뮤니티</a></li>
+                <li><a href="mypage.html" class="active">마이페이지</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="guide-header">
+            <h1 class="animate-on-scroll">My Dashboard</h1>
+            <p class="animate-on-scroll delay-1">나만의 파충류 사육 기록을 남겨보세요. 저장된 사진과 다이어리는 로컬 저장소에 안전하게 영구 보관됩니다.</p>
+        </section>
+
+        <section class="mypage-container animate-on-scroll delay-2">
+            <!-- Upload Form -->
+            <div class="glass-card upload-section">
+                <h3><i data-lucide="edit-3"></i> 새로운 기록 작성하기</h3>
+                <div class="upload-form">
+                    <textarea id="postText" placeholder="오늘 예쁜 우리 집 파충류에게 무슨 일이 있었나요?" rows="4"></textarea>
+                    <div class="upload-actions">
+                        <div>
+                            <label for="postImageBtn" class="upload-label">
+                                <i data-lucide="image"></i> 직접 사진 선택
+                            </label>
+                            <input type="file" id="postImageBtn" accept="image/*" style="display: none;">
+                            <span id="fileName" style="margin-left: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"></span>
+                        </div>
+                        <button id="submitPostBtn" class="btn btn-primary"><i data-lucide="send"></i> 다이어리 게시</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feed Section -->
+            <div class="feed-section">
+                <h3><i data-lucide="book-open"></i> 내 다이어리 피드 (My Diary)</h3>
+                <div id="mypageFeed" class="card-grid mypage-feed-grid">
+                    <!-- Posts via JS -->
+                </div>
+                <div id="noPostsMsg" class="empty-card" style="display: none;">
+                    <br><i data-lucide="inbox" class="icon-large"></i>
+                    <h3>아직 기록이 없습니다.</h3>
+                    <p>위의 입력창에서 첫 번째 파충류 다이어리를 작성해 보세요!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate-on-scroll">
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div class="footer-logo" style="justify-content: center; margin-bottom: 1rem;">
+                <i data-lucide="leaf"></i>
+                <span>ReptileWorld</span>
+            </div>
+            <p style="color: var(--text-muted);">파충류 사육에 대한 모든 것을 함께합니다.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=1.1"></script>
+    <script src="js/mypage.js?v=1.1"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+</body>
+</html>

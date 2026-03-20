@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이어리 상세 조회 - Reptile World</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.1">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="leaf"></i>
+                Reptile<span class="highlight">World</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#species">파충류 도감</a></li>
+                <li><a href="index.html#care-guide">사육 가이드</a></li>
+                <li><a href="index.html#supplies">용품 세팅</a></li>
+                <li><a href="index.html#community">커뮤니티</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <div class="detail-container animate-on-scroll">
+            <div style="margin-bottom: 2rem;">
+                <a href="mypage.html" style="color: var(--primary-color); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+                    <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i> 목록으로 돌아가기
+                </a>
+            </div>
+            
+            <div id="detailView">
+                <div style="text-align: center; padding: 4rem;">
+                    <i data-lucide="loader" class="icon-large" style="animation: spin 2s linear infinite;"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="animate-on-scroll">
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div class="footer-logo" style="justify-content: center; margin-bottom: 1rem;">
+                <i data-lucide="leaf"></i>
+                <span>ReptileWorld</span>
+            </div>
+            <p style="color: var(--text-muted);">파충류 사육에 대한 모든 것을 함께합니다.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=1.1"></script>
+    <script src="js/post_detail.js?v=1.1"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
